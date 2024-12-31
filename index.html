@@ -53,7 +53,7 @@
         }
 
         input[type="text"] {
-            width: 90%;
+    width: 90%;
             padding: 3px;
             border: 2px solid white;
             border-radius: 4px;
@@ -65,7 +65,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>Welcome Back</h2>
+        <h2>Welcome Back...</h2>
         <input type="text" id="inputBox" placeholder="Type here...">
         <div class="response" id="responseDiv"></div>
 
@@ -127,16 +127,16 @@
             const input = this.value.trim().toLowerCase();
             if (input === "") {
                 responseDiv.innerText = ""; // Display blank output when nothing is typed
-            } else if (input === "dark fantasy") {
-                responseDiv.innerText = "previous"; // Specific output for "dark fantasy"
-            } else if (input === "fucked up") {
-                responseDiv.innerText = "personal gallery of mine"; // Specific output for "fucked up"
-            } else if (input === "soundcloud") {
-                responseDiv.innerText = "soundcloud.com/zelllzelllzelll"; // Specific output for "soundcloud"
-            } else if (input === "youtube") {
-                responseDiv.innerText = "youtube.com/@zelllzelllzelll"; // Specific output for "youtube"
             } else if (input === "why") {
-                responseDiv.innerText = "boredom"; // Specific output for "why"
+                responseDiv.innerText = "boredom"; // Specific output for "dark fantasy"
+            } else if (input === "soundcloud") {
+                responseDiv.innerText = "soundcloud.com/zelllzelllzelll"; // Specific output for "fucked up"
+            } else if (input === "youtube") {
+                responseDiv.innerText = "youtube.com/@zelllzelllzelll"; // Specific output for "darkness"
+            } else if (input === "bandcamp") {
+                responseDiv.innerText = "zelll.bandcamp.com";
+            } else if (input === "in the air") {
+                responseDiv.innerText = "Feburary 14th, 2025"
             } else {
                 const shuffledResponse = shuffleString(input);
                 responseDiv.innerText = shuffledResponse; // Randomized input response
