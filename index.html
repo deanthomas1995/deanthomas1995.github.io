@@ -65,7 +65,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>I'm right Here</h2>
+        <h2>Welcome back, congratulations...</h2>
         <input type="text" id="inputBox" placeholder="Type here...">
         <div class="response" id="responseDiv"></div>
 
@@ -137,6 +137,10 @@
                 responseDiv.innerText = "zelll.bandcamp.com";
             } else if (input === "in the air") {
                 responseDiv.innerText = "Feburary 14th, 2025"
+            } else if (input === "kanye") {
+                responseDiv.innerText = "my greatest inspiration"
+            } else if (input === "congratulations") {
+                responseDiv.innerText = "you found my music, now look around"
             } else {
                 const shuffledResponse = shuffleString(input);
                 responseDiv.innerText = shuffledResponse; // Randomized input response
