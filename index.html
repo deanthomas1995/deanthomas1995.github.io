@@ -65,7 +65,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>Welcome back, congratulations...</h2>
+        <h2>Welcome back, my friend</h2>
         <input type="text" id="inputBox" placeholder="Type here...">
         <div class="response" id="responseDiv"></div>
 
@@ -126,21 +126,23 @@
         inputBox.addEventListener('input', function () {
             const input = this.value.trim().toLowerCase();
             if (input === "") {
-                responseDiv.innerText = ""; // Display blank output when nothing is typed
+                responseDiv.innerText = ""; 
             } else if (input === "why") {
-                responseDiv.innerText = "boredom"; // Specific output for "dark fantasy"
+                responseDiv.innerText = "you tell me"; 
             } else if (input === "soundcloud") {
-                responseDiv.innerText = "soundcloud.com/zelllzelllzelll"; // Specific output for "fucked up"
+                responseDiv.innerText = "soundcloud.com/s4khi"; 
             } else if (input === "youtube") {
-                responseDiv.innerText = "youtube.com/@zelllzelllzelll"; // Specific output for "darkness"
+                responseDiv.innerText = "youtube.com/@s4khi3x"; 
             } else if (input === "bandcamp") {
-                responseDiv.innerText = "zelll.bandcamp.com";
+                responseDiv.innerText = "s4khi.bandcamp.com";
             } else if (input === "in the air") {
                 responseDiv.innerText = "Feburary 14th, 2025"
             } else if (input === "kanye") {
                 responseDiv.innerText = "my greatest inspiration"
             } else if (input === "congratulations") {
-                responseDiv.innerText = "you found my music, now look around"
+                responseDiv.innerText = " look around"
+            } else if (input === "spotify") {
+                responseDiv.innerText = "https://open.spotify.com/artist/4LzrYbMmMCSbDK9XhHA1io?si=MlaB1iYbR9qAHYpMelvS5A"
             } else {
                 const shuffledResponse = shuffleString(input);
                 responseDiv.innerText = shuffledResponse; // // https://imgur.com/a/cLLUTrz, https://imgur.com/a/4p4tqnP, https://youtu.be/pvP0mEoM6r8 
